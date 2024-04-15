@@ -64,4 +64,29 @@
   --radius: var(--size-2xs);
   --radius-lg: var(--size-sm);
   --duration: 0.25s ease-in-out;
+  --bg-light: #e5e0e0;
+  /* Light mode colors */
+  --background-color-light: #fff;
+  --text-color-light: #000;
+  /* Dark mode colors */
+  --background-color-dark: #000;
+  --text-color-dark: #fff;
+}
+
+/* Define light mode styles */
+body.light-mode {
+  --background-color: var(--background-color-light);
+  --text-color: var(--text-color-light);
+}
+
+/* Define dark mode styles */
+body.dark-mode {
+  --background-color: var(--background-color-dark);
+  --text-color: var(--text-color-dark);
+}
+
+body {
+  background-color: red;
+  /* background-color: var(--background-color); */
+  color: var(--text-color);
 }
