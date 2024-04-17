@@ -92,9 +92,9 @@ body {
   color: var(--text-color);
 }
 
-body.light-mode svg {
+/* body.light-mode svg {
   color: var(--icon-color-light) !important;
-}
+} */
 
 body.dark-mode svg {
   color: var(--icon-color-dark) !important;
