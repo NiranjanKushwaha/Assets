@@ -17,20 +17,20 @@
   --size-3xl: 2rem;
   --size-4xl: 2.5rem;
   --size-25px: 25px;
-  --border: #f9b8b8;
-  --primary: #acdb81;
-  --secondary: #a28ee7;
-  --tertiary: #b92989;
+  --border: #fde7f4;
+  --primary: #94d800;
+  --secondary: #9d4f00;
+  --tertiary: #125656;
   --quaternary: #3265aa1a;
-  --active: #25c89f;
+  --active: #597cfa;
   --active-light: #d4ddff;
   --inactive: #b4bcd6;
   --inactive-light: #d8d8d8;
-  --success: #63bce9;
-  --success-light: #c5d993;
-  --note: #fdea59;
+  --success: #24d427;
+  --success-light: #96c819;
+  --note: #ffe000;
   --note-light: #fef8d0;
-  --warning: #e3e772;
+  --warning: #e29304;
   --warning-light: #ffe18a;
   --info: #ffeccc;
   --info-light: #fffaeb;
@@ -52,16 +52,52 @@
   --tertiaryBgColor: #f3fafa;
   --primaryTextColor: #fff;
   --primarySubTextColor: #8186a4;
-  --primaryBgColorHover: #1147bb;
+  --primaryBgColorHover: #66cef7;
   --primaryTextColorHover: #fff;
-  --verified: #b744a2;
-  --profileBg1: #97c6e2;
-  --profileBg2: #f6a5f8;
+  --verified: #e8ebf8;
+  --profileBg1: #3f4531;
+  --profileBg2: #985f99;
   --profileBg3: #168c8c;
-  --profileBg4: #80a0eb;
+  --profileBg4: #4061ad;
   --profileBg5: #558b6e;
   --radius-sm: var(--size-3xs);
   --radius: var(--size-2xs);
   --radius-lg: var(--size-sm);
   --duration: 0.25s ease-in-out;
+  --bg-light: #e5e0e0;
+  /* Light mode colors */
+  --background-color-light: #fff;
+  --text-color-light: #000;
+  /* Dark mode colors */
+  --background-color-dark: #000;
+  --text-color-dark: #fff;
+  --icon-color-dark: #fff;
+  --icon-color-light: #000;
+}
+
+/* Define light mode styles */
+body.light-mode {
+  --background-color: var(--background-color-light);
+  --text-color: var(--text-color-light);
+}
+
+/* Define dark mode styles */
+body.dark-mode {
+  --background-color: var(--background-color-dark);
+  --text-color: var(--text-color-dark);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* This will work through entire application for svg icons in dark-mode and light-mode */
+
+/* body.light-mode svg {
+  color: var(--icon-color-light) !important;
+} */
+
+body.dark-mode svg {
+  color: var(--icon-color-dark) !important;
 }
