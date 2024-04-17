@@ -109,6 +109,6 @@ body.dark-mode svg:not(.no-theme-change-effect) {
 }
 
 
-body.dark-mode .appBar_container{
+body.dark-mode.appBar_container{
   background-color: var(--verified);
 }
