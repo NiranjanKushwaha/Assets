@@ -107,8 +107,3 @@ body {
 body.dark-mode svg:not(.no-theme-change-effect) {
   color: var(--icon-color-dark) !important;
 }
-
-
-body.dark-mode.appBar_container{
-  background-color: var(--verified);
-}
