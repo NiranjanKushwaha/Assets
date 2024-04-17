@@ -99,19 +99,3 @@ body.light-mode svg {
 body.dark-mode svg {
   color: var(--icon-color-dark) !important;
 }
-
-/* Apply generic styles to MUI icons */
-.MuiSvgIcon-root {
-  fill: var(--text-color); /* Use text color for icon color by default */
-  transition: fill var(--duration); /* Smooth transition for theme change */
-}
-
-/* Define light mode styles */
-body.light-mode .MuiSvgIcon-root {
-  fill: var(--icon-color-light) !important; /* Override for light mode */
-}
-
-/* Define dark mode styles */
-body.dark-mode .MuiSvgIcon-root {
-  fill: var(--icon-color-dark) !important; /* Override for dark mode */
-}
