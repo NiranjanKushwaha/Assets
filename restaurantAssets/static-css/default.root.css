@@ -98,6 +98,17 @@ body {
   color: var(--icon-color-light) !important;
 } */
 
-body.dark-mode svg {
+/* Todo: below css will apply to all svg either svg react component or material ui svg */
+/* body.dark-mode svg {
   color: var(--icon-color-dark) !important;
+} */
+
+/* Todo: this css will apply to all svgs but not those which have the class named  no-theme-change-effect*/
+body.dark-mode svg:not(.no-theme-change-effect) {
+  color: var(--icon-color-dark) !important;
+}
+
+
+body.dark-mode .appBar_container{
+  background-color: var(--verified);
 }
