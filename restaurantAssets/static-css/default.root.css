@@ -92,6 +92,8 @@ body {
   color: var(--text-color);
 }
 
+/* This will work through entire application for svg icons in dark-mode and light-mode */
+
 /* body.light-mode svg {
   color: var(--icon-color-light) !important;
 } */
